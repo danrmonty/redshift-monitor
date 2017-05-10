@@ -4,7 +4,7 @@
 
 CREATE TABLE public.redshift_results
 (
-    id integer NOT NULL DEFAULT nextval('test_id'::regclass),
+    id bigserial NOT NULL,
     guid uuid NOT NULL,
     "timestamp" timestamp without time zone NOT NULL,
     current_is_vacuum_in_process integer,
